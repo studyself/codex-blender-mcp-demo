@@ -12,8 +12,7 @@ The project now contains two showcase workflows:
   `.blend` output, a hero render, and a GIF preview.
 - **Existing asset decomposition**: Codex opens a Blender scene from
   [`nidorx/matcaps`](https://github.com/nidorx/matcaps), isolates the female
-  sci-fi bust, identifies that the largest `component_001` is still a
-  continuous mesh, segments it into 12 semantic modules, and keyframes a clean
+  sci-fi bust, segments it into 12 semantic modules, and keyframes a clean
   disassembly / reassembly animation.
 
 ## Demo 1: Codex -> MCP -> Blender
@@ -40,10 +39,9 @@ This demo uses the repository imagery and preview bust from
 [`nidorx/matcaps`](https://github.com/nidorx/matcaps). Instead of using generic
 spheres, it works with the actual female sci-fi bust asset.
 
-The first geometry pass finds 83 loose mesh components in
-`PreviewSolideFemaleSCIFIbust`. The largest one, `component_001`, is still the
-whole continuous upper-body bust, so Codex performs a second semantic split into
-12 animatable modules:
+Codex opens the source Blender scene, isolates the female sci-fi bust, segments
+the sculpture body into 12 animatable semantic modules, applies MatCap-style
+materials, and renders a clean disassembly / reassembly animation:
 
 - `cranial_shell`
 - `face_mask`
@@ -66,8 +64,7 @@ What it demonstrates:
 
 - Codex can inspect existing Blender geometry instead of only creating new
   primitives.
-- Loose mesh components do not always match human-meaningful parts.
-- A continuous mesh can be converted into semantic modules for explanation,
+- A sculptural mesh can be converted into semantic modules for explanation,
   visualization, or assembly-style animation.
 - The final animation is rendered cleanly with only the sculpture and separated
   modules visible.
@@ -125,8 +122,6 @@ outputs are included for reference.
   `.blend`, renders the hero PNG, and writes a scene summary.
 - `tools/render_codex_blender_animation.py` opens the generated `.blend`, adds
   clearer keyframes, renders a PNG frame sequence, and compiles a GIF preview.
-- `tools/export_bust_components.py` exports the 83 loose mesh components from
-  the source bust as diagnostic images.
 - `tools/preview_component001_semantic_segmentation.py` previews the 12-part
   semantic segmentation of the continuous `component_001` mesh.
 - `tools/run_component001_semantic_assembly_demo.py` creates the final clean
