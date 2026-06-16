@@ -1,0 +1,18 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local clone used during development; install it from requirements instead.
+codex_blender_mcp/
+
+# Generated intermediate render frames are large and reproducible.
+outputs/**/animation_frames/
+*.blend1
+
+# Local OS/editor files.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

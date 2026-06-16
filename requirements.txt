@@ -1,0 +1,2 @@
+blender-codex-mcp @ git+https://github.com/hassledzebra/codex_blender_mcp.git
+pillow>=12.0
