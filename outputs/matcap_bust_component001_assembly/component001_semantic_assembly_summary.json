@@ -1,0 +1,109 @@
+{
+  "name": "COMPONENT_001 SEMANTIC ASSEMBLY",
+  "source_project": "https://github.com/nidorx/matcaps",
+  "source_object": "PreviewSolideFemaleSCIFIbust",
+  "source_component": "component_001, largest continuous loose mesh",
+  "method": "semantic segmentation of a continuous mesh, then keyframed disassembly and reassembly",
+  "prompt": "Create a Codex + Blender animation case based on nidorx/matcaps:\nuse the repository's female sci-fi bust, isolate component_001, split that\ncontinuous mesh into semantic modules, animate those modules disassembling and\nreassembling, and render a hero image plus an animation preview.",
+  "semantic_part_count": 12,
+  "regions": [
+    {
+      "index": 1,
+      "name": "cranial_shell",
+      "label": "cranial shell",
+      "face_count": 61329
+    },
+    {
+      "index": 2,
+      "name": "face_mask",
+      "label": "face mask",
+      "face_count": 26644
+    },
+    {
+      "index": 3,
+      "name": "jaw_neck_front",
+      "label": "jaw + front neck",
+      "face_count": 2823
+    },
+    {
+      "index": 4,
+      "name": "rear_head_plate",
+      "label": "rear head plate",
+      "face_count": 15042
+    },
+    {
+      "index": 5,
+      "name": "temple_ear_module",
+      "label": "temple / ear module",
+      "face_count": 2624
+    },
+    {
+      "index": 6,
+      "name": "neck_spine",
+      "label": "neck spine",
+      "face_count": 47194
+    },
+    {
+      "index": 7,
+      "name": "upper_chest_shell",
+      "label": "upper chest shell",
+      "face_count": 10709
+    },
+    {
+      "index": 8,
+      "name": "front_bust_pod",
+      "label": "front bust pod",
+      "face_count": 5788
+    },
+    {
+      "index": 9,
+      "name": "side_rib_panel",
+      "label": "side rib panel",
+      "face_count": 6689
+    },
+    {
+      "index": 10,
+      "name": "rear_torso_shell",
+      "label": "rear torso shell",
+      "face_count": 28670
+    },
+    {
+      "index": 11,
+      "name": "lower_base_block",
+      "label": "lower base block",
+      "face_count": 3356
+    },
+    {
+      "index": 12,
+      "name": "connector_transition",
+      "label": "connector transition",
+      "face_count": 15366
+    }
+  ],
+  "blend_path": "C:\\qwrk\\codexwrk2\\Q-Creator\\outputs\\matcap_bust_component001_assembly\\component001_semantic_assembly.blend",
+  "hero_path": "C:\\qwrk\\codexwrk2\\Q-Creator\\outputs\\matcap_bust_component001_assembly\\component001_semantic_assembly_hero.png",
+  "frame_dir": "C:\\qwrk\\codexwrk2\\Q-Creator\\outputs\\matcap_bust_component001_assembly\\animation_frames",
+  "animation_gif": "C:\\qwrk\\codexwrk2\\Q-Creator\\outputs\\matcap_bust_component001_assembly\\component001_semantic_assembly_animation.gif",
+  "frame_start": 1,
+  "frame_end": 90,
+  "fps": 18,
+  "hero_resolution": [
+    1920,
+    1080
+  ],
+  "animation_resolution": [
+    800,
+    450
+  ],
+  "engine": "BLENDER_EEVEE",
+  "gif": {
+    "ok": true,
+    "gif_path": "C:\\qwrk\\codexwrk2\\Q-Creator\\outputs\\matcap_bust_component001_assembly\\component001_semantic_assembly_animation.gif",
+    "frame_count": 90,
+    "size": [
+      800,
+      450
+    ]
+  },
+  "blender_return_code": 0
+}
